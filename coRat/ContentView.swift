@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct ContentView: View {
+    @State var isActive = false
     var body: some View {
         NavigationStack{
             VStack {
@@ -18,10 +19,12 @@ struct ContentView: View {
                 Button(action:{
                     do {
                         try Auth.auth().signOut()
+                        isActive = true
                     } catch let signOutError as NSError {
                         print("Error signing out: %@", signOutError)}
                 }){
-                        Text("Logout")
+                    Text("Logout")
+                    NavigationLink(destination: LoginView(), isActive: $isActive){}
                 }
             }
             .padding()

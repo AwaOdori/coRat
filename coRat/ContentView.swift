@@ -6,14 +6,22 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack {
                 NavigationLink(destination: LoginView()){
-                    Text("Hello")
-                    
+                    Text("Login")
+                }
+                Button(action:{
+                    do {
+                        try Auth.auth().signOut()
+                    } catch let signOutError as NSError {
+                        print("Error signing out: %@", signOutError)}
+                }){
+                        Text("Logout")
                 }
             }
             .padding()

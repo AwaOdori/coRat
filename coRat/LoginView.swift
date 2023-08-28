@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var mailAddress = ""
     @State private var password = ""
     @State private var loginState = false
+    @State private var signInState = false
     @State private var errorMessage = ""
     var body: some View {
         NavigationStack{
@@ -34,27 +35,28 @@ struct LoginView: View {
                             }
                         }){
                             Text("Login")
+                            NavigationLink(destination: ContentView(), isActive: $loginState){}
                         }
                         Button(action:{
                             Auth.auth().createUser(withEmail: mailAddress, password: password){ result, error in
-                                    if let user = result?.user {
-                                        loginState = true
-                                    }else{
-                                        loginState = false
-                                        errorMessage = "Sign-in failed."
-                                    }
+                                if let user = result?.user {
+                                    signInState = true
+                                }else{
+                                    signInState = false
+                                    errorMessage = "Sign-in failed."
                                 }
+                            }
                         }){
                             Text("Sign in ")
+                            NavigationLink(destination: SignInView(), isActive: $signInState){}
                         }
                     }
                 }
             }
-        }.navigationDestination(isPresented: $loginState){
-            SignInView()
         }
     }
 }
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

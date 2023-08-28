@@ -27,6 +27,8 @@
 		5A9B682B2A9B6F880007C8D8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B682A2A9B6F880007C8D8 /* LoginView.swift */; };
 		5A9B682E2A9B74E60007C8D8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9B682D2A9B74E60007C8D8 /* FirebaseAuth */; };
 		5A9B68302A9C6E950007C8D8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B682F2A9C6E950007C8D8 /* SignInView.swift */; };
+		5A9B68322A9CEBC40007C8D8 /* プライバシーポリシー.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B68312A9CEBC30007C8D8 /* プライバシーポリシー.pdf */; };
+		5A9B68342A9CECB10007C8D8 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9B68332A9CECB00007C8D8 /* PDFKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5A8B7BE52A9B6B1C001D7CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A9B682A2A9B6F880007C8D8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5A9B682F2A9C6E950007C8D8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5A9B68312A9CEBC30007C8D8 /* プライバシーポリシー.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "プライバシーポリシー.pdf"; sourceTree = "<group>"; };
+		5A9B68332A9CECB00007C8D8 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 				5A8B7BEF2A9B6C0A001D7CD1 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				5A8B7BE92A9B6C0A001D7CD1 /* FirebaseAnalytics in Frameworks */,
 				5A8B7BFB2A9B6C0A001D7CD1 /* FirebaseRemoteConfigSwift in Frameworks */,
+				5A9B68342A9CECB10007C8D8 /* PDFKit.framework in Frameworks */,
 				5A8B7BFD2A9B6C0A001D7CD1 /* FirebaseStorage in Frameworks */,
 				5A8B7BED2A9B6C0A001D7CD1 /* FirebaseFirestore in Frameworks */,
 				5A9B682E2A9B74E60007C8D8 /* FirebaseAuth in Frameworks */,
@@ -89,6 +94,7 @@
 				5A9B682A2A9B6F880007C8D8 /* LoginView.swift */,
 				5A9B682F2A9C6E950007C8D8 /* SignInView.swift */,
 				5A8B7BD92A9A4EF3001D7CD1 /* Assets.xcassets */,
+				5A9B68312A9CEBC30007C8D8 /* プライバシーポリシー.pdf */,
 				5A8B7BE52A9B6B1C001D7CD1 /* GoogleService-Info.plist */,
 				5A8B7BDB2A9A4EF3001D7CD1 /* Preview Content */,
 			);
@@ -106,6 +112,7 @@
 		5A9B682C2A9B74E60007C8D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A9B68332A9CECB00007C8D8 /* PDFKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 			files = (
 				5A8B7BDD2A9A4EF3001D7CD1 /* Preview Assets.xcassets in Resources */,
 				5A8B7BE62A9B6B1C001D7CD1 /* GoogleService-Info.plist in Resources */,
+				5A9B68322A9CEBC40007C8D8 /* プライバシーポリシー.pdf in Resources */,
 				5A8B7BDA2A9A4EF3001D7CD1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
